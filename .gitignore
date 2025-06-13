@@ -1,0 +1,35 @@
+# FPGA design files
+*.bit
+*.bin
+*.svf
+*.vcd
+*.xml
+*.wcfg
+*.wdb
+*.jou
+*.log
+*.xpr
+*.rpt
+
+# Simulation files
+*.o
+*.exe
+*.out
+
+# Temporary files
+*.tmp
+*.bak
+
+# IDE/project files
+.ip_user_files/
+.hw/
+.xsim/
+*.xise
+*.xsim
+*.Xil
+*.cache/
+*.runs/
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,35 +1,33 @@
-# FPGA design files
-*.bit
-*.bin
-*.svf
-*.vcd
-*.xml
-*.wcfg
-*.wdb
+# Vivado / Xilinx
 *.jou
 *.log
-*.xpr
-*.rpt
-
-# Simulation files
-*.o
-*.exe
-*.out
-
-# Temporary files
-*.tmp
-*.bak
-
-# IDE/project files
-.ip_user_files/
-.hw/
-.xsim/
-*.xise
-*.xsim
-*.Xil
 *.cache/
 *.runs/
+*.sim/
+*.hw/
+*.xpr
+*.xsd
+*.str
+*.ip_user_files/
+*.webtalk/
+*.Xil/
 
-# OS files
+# General
+*.vcd
+*.vvp
+*.bit
+*.mif
+*.elf
+*.bin
+*.hex
+*.zip
+*.csv
+
+# OS/Editor
 .DS_Store
-Thumbs.db
+.vscode/
+*.swp
+*.bak
+*.tmp
+.idea/
+

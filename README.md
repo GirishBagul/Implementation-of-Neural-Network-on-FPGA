@@ -1,27 +1,32 @@
-# Implementation of Neural Network on FPGA
+# Pattern Recognition Using Neural Networks on FPGA
 
-This project involves designing and implementing a neural network on an FPGA development board. The goal is to accelerate neural network inference by leveraging the parallel processing capabilities of FPGA hardware.
+This project focuses on implementing a digit recognition system using a neural network on an FPGA. The system is trained to recognize handwritten digits (0–9), addressing the challenge of diverse writing styles. The trained model is converted to a hardware description and deployed onto an FPGA board for real-time digit classification.
 
-## Features
+## 🔧 Components & Tools Used
+- Xilinx Spartan-6 / Artix-7 FPGA (or similar)
+- Verilog/VHDL
+- MATLAB / Python (for dataset preprocessing and model training)
+- MNIST-like dataset of handwritten digits
+- Xilinx Vivado / ISE Design Suite
 
-- Hardware implementation of neural network layers
-- Parallel computation for faster inference
-- Resource-efficient design optimized for FPGA
-- Simulation and testing on FPGA board
+## 📋 Features
+- Recognizes digits 0 to 9 from handwritten input
+- Uses a trained neural network model converted into HDL
+- Processes input features and classifies digit in real-time
+- Resource-optimized for FPGA implementation
 
-## Technologies Used
+## 🛠️ How It Works
+1. Preprocess dataset of handwritten digits to extract pixel values.
+2. Train a lightweight feedforward neural network using MATLAB/Python.
+3. Convert the trained model into fixed-point logic compatible with HDL.
+4. Implement the network in Verilog/VHDL.
+5. Synthesize and deploy on FPGA board.
+6. Input test digit via simulated data or peripheral interface; receive prediction output.
 
-- Hardware Description Language: Verilog / VHDL
-- FPGA Platform: [Specify your FPGA board model]
-- Simulation Tools: [Specify tools, e.g., ModelSim, Vivado]
+## 🎯 Applications
+- OCR systems (offline character recognition)
+- Embedded digit recognition in smart devices
+- Real-time educational demos of AI on hardware
 
-## How to Run
-
-1. Clone the repository.
-2. Open the project in your FPGA design software.
-3. Synthesize and implement the design for your FPGA board.
-4. Program the FPGA and test the neural network inference.
-
-## License
-
-This project is licensed under the MIT License.
+## 📜 License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
